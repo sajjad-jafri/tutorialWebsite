@@ -19,6 +19,18 @@ def about():
 def contact():
     return render_template("contact.html")
 
+@app.route("/courses/python")
+def python():
+    return render_template("python/python.html")
+
+@app.route("/courses/pythonIntro")
+def pythonIntro():
+    return render_template("python/python_intro.html")
+
+@app.route("/courses/pythonInputOutput")
+def pythonInputOutput():
+    return render_template("python/inpOut.html")
+
 
 if __name__ == "__main__":
     app.run(debug=True, port=5001)
