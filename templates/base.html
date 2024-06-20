@@ -12,10 +12,10 @@
         <main id = content>
             <nav>
                 <ul>
-                      <li><a href = "index.html">Home</a></li>
-                      <li><a href="course.html">Courses</a></li>
-                      <li><a href="#about">About</a></li>
-                      <li><a href="#contact">Contact</a></li>
+                      <li><a href = "{{url_for('home')}}">Home</a></li>
+                      <li><a href = "{{url_for('courses')}}">Courses</a></li>
+                      <li><a href = "{{url_for('about')}}">About</a></li>
+                      <li><a href = "{{url_for('contact')}}">Contact</a></li>
                 </ul>
             </nav>
 
