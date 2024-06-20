@@ -1,0 +1,18 @@
+<html>
+    <head>
+        <title>{% block title %}{% endblock %}</title>
+        <link rel="stylesheet" href="{{url_for('static', filename='mystyle.css')}}">
+    </head>
+
+    <body>
+        <header>
+            <h1>Welcome to LearningHub</h1>
+            {% block content %}
+            {% endblock %}
+        </header>
+
+        <footer>
+            <p>&copy; 2024 LeraninHub</p>
+        </footer>
+    </body>
+</html>
