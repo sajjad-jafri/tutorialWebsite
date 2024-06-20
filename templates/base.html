@@ -6,13 +6,29 @@
 
     <body>
         <header>
-            <h1>Welcome to LearningHub</h1>
-            {% block content %}
+            {% block header %}
             {% endblock %}
         </header>
+        <main id = content>
+            <nav>
+                <ul>
+                      <li><a href = "index.html">Home</a></li>
+                      <li><a href="course.html">Courses</a></li>
+                      <li><a href="#about">About</a></li>
+                      <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+
+            <hr color="dustyrose" style="width:95%;text-align:center;color:blue"><br>
+            {% block content %}
+            {% endblock %}
+
+          
+        </main>
 
         <footer>
             <p>&copy; 2024 LeraninHub</p>
         </footer>
+        
     </body>
 </html>
