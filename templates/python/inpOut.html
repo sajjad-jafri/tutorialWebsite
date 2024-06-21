@@ -12,6 +12,7 @@
         <ul>
             <li><a href="{{url_for('pythonIntro')}}">Introduction to Python</a></li>
             <li class="selected"><a href="{{url_for('pythonInputOutput')}}">Input/Output in Python</a></li>
+            <li><a href="{{url_for('dataTypes')}}">Data Types in Python</a></li>
             <li><a href="#control-flow">Control Flow</a></li>
             <li><a href="#functions">Functions</a></li>
             <li><a href="#lists">Lists, Tuples, and Dictionaries</a></li>
@@ -39,9 +40,9 @@
         <p style="line-height: 0.5"><i><b>Syntax:</i></b></p> 
         <p style="line-height: 1.7; font-family:segoe print">inp = input("Statement")</p>
         <p style="line-height: 1.7; font-family:segoe print">Example 1:</br>
-        <img src="../static/images/Python\input1python.png" /></p><br>
+        <img src="/static/images/Python\input1python.png" /></p><br>
         <p style="line-height: 1.7; font-family:segoe print">Example 2:</br>
-        <img src="../static/images/Python/input2python.png" /></p>
+        <img src="/static/images/Python/input2python.png" /></p>
         <p>In above example, we got error when we incremented the x by 1, it's because string type value (5 in this case) cannot be add with integer type value (1 in this case).</p> 
         <p style="line-height: 1.7; font-family:segoe print"><b>By default input() returns string type value.</b></p>
         <p>So we need to do type casting to convert from string to int.</p><br>
@@ -49,24 +50,24 @@
         <h2>Type casting with input():</h2>
         <p>Type conversion or type casting refers to the method to convert one data type to another. Mainly type casting can be done using <b>int(), float(), str(), tuple(), set(), list(), or dict()</b> functions.</p> 
         <p style="line-height: 1.7; font-family:segoe print">Example 3:<br>
-        <img src="../static/images/Python/input3python.png" /></p><br>
+        <img src="/static/images/Python/input3python.png" /></p><br>
         <p style="line-height: 1.7; font-family:segoe print">Example 4:<br>
-        <img src="../static/images/Python/input4python.png" /></p><br>
+        <img src="/static/images/Python/input4python.png" /></p><br>
         <hr color="gray">
         <h2>Taking multiple inputs</h2>
         <p style="line-height: 1.7; font-family:segoe print">Example 5:</br>
-        <img src="../static/images/Python/input5python.png" /></p>
+        <img src="/static/images/Python/input5python.png" /></p>
         <p> --> split() is a function to split the input() function into multiple values.</p>
         <p> --> By default, split() divide the string with respect to space between them.</p>
         <p> --> Below is the example where the input string will be divided by comma (,).</p>
         <p style="line-height: 1.7; font-family:segoe print">Example 6:</br>
-        <img src="../static/images/Python/input6python.png" /></p>
+        <img src="/static/images/Python/input6python.png" /></p>
         <br><br><br><br>
         <hr color="dustyrose">
         <h2>Output Statement in Python</h2>
         <p><i>print()</i> function is used to print output in python. This function allows us to display text, variables, and expressions.</p>
         <p style="line-height: 1.7; font-family:segoe print">Example:</br>
-        <img src="../static/images/Python/output1python.png" /></p>
+        <img src="/static/images/Python/output1python.png" /></p>
         <p>In this example, “Hello World!” is a string literal enclosed within double quotes. Above example written in python 3.x. Let's see some below example for python 2.7.</p>
         <ul>
             <li><p style="line-height: 1.2; font-family:segoe print">print "Hello World!"</p></li>
@@ -76,17 +77,17 @@
         <hr color="gray">
         <p>We can assigns values to variables name and age, then prints them with labels.</p>
         <p style="line-height: 1.7; font-family:segoe print">Example:</br>
-        <img src="../static/images/Python/output2python.png" /></p><br><br><br><br>
+        <img src="/static/images/Python/output2python.png" /></p><br><br><br><br>
 
         <hr color="gray">
         <p style="line-height: 1.7; font-family:segoe print"><b>print()</b> --> prints a blank line. It is a line separator.</p>
         <p style="line-height: 1.7; font-family:segoe print">Example:</br>
-        <img src="../static/images/Python/output3python.png" /></p><br><br><br><br>
+        <img src="/static/images/Python/output3python.png" /></p><br><br><br><br>
 
         <hr color="gray">
         <p>Difference between print("Hello"+"World") and print("Hello","World")</p>
         <p style="line-height: 1.7; font-family:segoe print">Example:</br>
-        <img src="../static/images/Python/output4python.png" /></p>
+        <img src="/static/images/Python/output4python.png" /></p>
         <p style="line-height: 1.7; font-family:segoe print">print() function insert spaces between objects automatically.</p><br><br><br><br>
 
         <hr color = "gray">
@@ -95,15 +96,15 @@
         <p style="line-height: 1.7"><b>sep attribute</b><br>
         The <i>sep</i> parameter in Python is used with the <i>print()</i> function to specify the separator between the arguments. By default, the separator is a space character, but you can customize it to any character, integer, or string of your choice. It is found only in python 3.x or later.</p>
         <p style="line-height: 1.7; font-family:segoe print">Example:</br>
-        <img src="../static/images/Python/output5python.png" /></p><br><br>
+        <img src="/static/images/Python/output5python.png" /></p><br><br>
 
         <p style="line-height: 1.7"><b>end attribute</b><br>
         In Python, the <i>end</i> parameter in the <i>print()</i> function controls what character(s) are printed at the end of the printed text. By default, print() ends with a newline character (\n), which means that each call to print() will print the output on a new line. However, you can customize the behavior using the end parameter.</p>
         <p style="line-height: 1.7; font-family:segoe print">Example:</br>
-        <img src="../static/images/Python/output6python.png" /></p><br><br>
+        <img src="/static/images/Python/output6python.png" /></p><br><br>
 
         <p style="line-height: 1.7; font-family:segoe print">More Example:</br>
-        <img src="../static/images/Python/output7python.png" /></p><br><br><br><br>
+        <img src="/static/images/Python/output7python.png" /></p><br><br><br><br>
 
         <hr color = "gray">
         <h2>Formatted string with print() function</h2>
@@ -120,14 +121,29 @@
         <p style = "font-family:segoe print"><b><i>Syntax:</i></b><br>
         print("formatted string" %(Variable list))</p>
         <p style="line-height: 1.7; font-family:segoe print">Example:</br>
-        <img src="../static/images/Python/output7python.png" /></p><br><br>
+        <img src="/static/images/Python/output8python.png" /></p><br><br>
+
+        <p><b>Using format() method</b></p>
+	    <p style="line-height: 1.7; font-family:segoe print">Example:</br>
+	    <img src="/static/images/Python/output9python.png" /></p><br><br>
+
+	    <p><b>Using f-string</b></p>
+	    <p style="line-height: 1.7; font-family:segoe print">Example:</br>
+	    <img src="/static/images/Python/output10python.png" /></p><br><br>
+
+        <button onclick="scrollToTop()" class="scroll-top-button">&#8593;</button> &emsp;
+	    <a href = "{{url_for('dataTypes')}}" class="next-button" id="nextButton">Next &raquo;</a>
   
-  
-
-
-
     </div>
  </section>
 
 
+{% endblock %}
+
+{% block jsNext %}
+<script>
+    function scrollToTop() {
+     window.scrollTo({top:0, behavior: 'smooth'});
+   }
+</script>
 {% endblock %}
