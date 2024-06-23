@@ -1,18 +1,14 @@
 {% extends "base.html" %}
 
-{% block title %}Python Course{% endblock %}
+{% block title %}Control Flow - Transfer Statements{% endblock %}
 
 {% block header %}
-<h1>Python</h1>
+<h1>Transfer Statements in Python</h1>
 {% endblock %}
 
 {% block content %}
-<div class="hero-text">
-    <h2>Course Overview</h2>
-    <p>This Python course covers the fundamentals of programming with Python, including variables, data types, control flow, functions, and more.
-        It is suitable for beginners with no prior programming experience.</p>
-    <div class="syllabus">        
-        <h2>Syllabus</h2>
+<section id = "course-details"> 
+    <div class = "syllabi">
         <ul>
             <li><a href="{{url_for('pythonIntro')}}">Introduction to Python</a></li>
             <li><a href="{{url_for('pythonInputOutput')}}">Input/Output in Python</a></li>
@@ -20,7 +16,7 @@
             <li><a href="{{url_for('pythonIfStatements')}}">Control Flow - If Satements</a></li>
             <li><a href="{{url_for('pythonForLoop')}}">For Loop</a></li>
             <li><a href="{{url_for('pythonWhileLoop')}}">While Loop</a></li>
-            <li><a href="{{url_for('pythonTransferStatements')}}">Transfer Statements</a></li>
+            <li class="selected"><a href="{{url_for('pythonTransferStatements')}}">Transfer Statements</a></li>
             <li><a href="#functions">Functions</a></li>
             <li><a href="#lists">Lists, Tuples, and Dictionaries</a></li>
             <li><a href="#file-handling">File Handling</a></li>
@@ -29,6 +25,25 @@
             <li><a href="#oops">Object Oriented Programming</a></li>
         </ul>
     </div>
-</div>
 
+    <div class = "content" >
+        <h2>Transfer Statements in Python</h2>
+        <p>Allows a set of instructions to be performed repeatedly.</p>
+        <br><br><br>
+
+
+        <button onclick="scrollToTop()" class="scroll-top-button">&#8593;</button> &emsp;
+        <a href = "{{url_for('pythonWhileLoop')}}" class="next-button" id="nextButton">Next &raquo;</a>
+        
+    </div>
+</section>
+{% endblock %}
+
+
+{% block jsNext %}
+<script>
+    function scrollToTop() {
+     window.scrollTo({top:0, behavior: 'smooth'});
+   }
+</script>
 {% endblock %}

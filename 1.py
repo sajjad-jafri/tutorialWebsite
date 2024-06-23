@@ -31,9 +31,25 @@ def pythonIntro():
 def pythonInputOutput():
     return render_template("python/inpOut.html")
 
-@app.route("/courses/Python/Data-Types")
-def dataTypes():
+@app.route("/courses/python/Data-Types")
+def pythonDataTypes():
     return render_template("python/dataTypes.html")
+
+@app.route("/courses/python/Control-Flow-If-Statements")
+def pythonIfStatements():
+    return render_template("python/ifStatements.html")
+
+@app.route("/courses/python/For-Loop")
+def pythonForLoop():
+    return render_template("python/forLoop.html")
+
+@app.route("/courses/python/While-Loop")
+def pythonWhileLoop():
+    return render_template("python/whileLoop.html")
+
+@app.route("/courses/python/Transfer-Statements")
+def pythonTransferStatements():
+    return render_template("python/transferStatements.html")
 
 
 if __name__ == "__main__":
