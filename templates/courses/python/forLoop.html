@@ -10,13 +10,15 @@
 <section id = "course-details"> 
     <div class = "syllabi">
         <ul>
-            <li><a href="{{url_for('pythonIntro')}}">Introduction to Python</a></li>
-            <li><a href="{{url_for('pythonInputOutput')}}">Input/Output in Python</a></li>
-            <li><a href="{{url_for('pythonDataTypes')}}">Data Types in Python</a></li>
-            <li><a href="{{url_for('pythonIfStatements')}}">Control Flow - If Satements</a></li>
-            <li class="selected"><a href="{{url_for('pythonForLoop')}}">For Loop</a></li>
-            <li><a href="{{url_for('pythonWhileLoop')}}">While Loop</a></li>
-            <li><a href="{{url_for('pythonTransferStatements')}}">Transfer Statements</a></li>
+            <li><a href="{{ url_for('display_chapter', course_name='python', chapter_name='python_intro') }}">Introduction in Python</a></li>
+            <li><a href="{{ url_for('display_chapter', course_name='python', chapter_name='inpOut') }}">Input/Output in Python</a></li>
+            <li><a href="{{ url_for('display_chapter', course_name='python', chapter_name='dataTypes') }}">Data Types in Python</a></li>
+            <li><a href="{{ url_for('display_chapter', course_name='python', chapter_name='ifStatements') }}">Control-Flow - If Statement</a></li> 
+            <li><a href="{{ url_for('display_chapter', course_name='python', chapter_name='forLoop') }}"
+                {% if active_chapter == 'forLoop' %} class="selected" {% endif %}>
+                For Loop</a></li>
+            <li><a href="{{ url_for('display_chapter', course_name='python', chapter_name='whileLoop') }}">While Loop</a></li>
+            <li><a href="{{ url_for('display_chapter', course_name='python', chapter_name='transferStatements') }}">Transfer Statement</a></li>
             <li><a href="#functions">Functions</a></li>
             <li><a href="#lists">Lists, Tuples, and Dictionaries</a></li>
             <li><a href="#file-handling">File Handling</a></li>
@@ -33,7 +35,7 @@
 
 
         <button onclick="scrollToTop()" class="scroll-top-button">&#8593;</button> &emsp;
-        <a href = "{{url_for('pythonWhileLoop')}}" class="next-button" id="nextButton">Next &raquo;</a>
+        <a href="{{ url_for('display_chapter', course_name='python', chapter_name='whileLoop') }}" class="next-button" id="nextButton">Next &raquo;</a>
         
     </div>
 </section>

@@ -9,7 +9,7 @@
 {% block content %}
 <section id="courses">
     <div class="course">
-        <a href="{{url_for('python')}}">
+        <a href="{{ url_for('display_chapter', course_name='python', chapter_name='python') }}">
         <img src="/static/images/python.png" width=220px height=160px alt="Python Courses">
         <h4>Python Programming</h4>
         </a>
