@@ -175,7 +175,7 @@ font-size: 1.2rem;
 .scroll-top-button {
 bottom: 80px;
 right: 80px;
-background-color: #007bff;
+background-color: dimgray;
 color:#fff;
 width:40px;
 height:40px;
@@ -187,13 +187,13 @@ z-index:999;
 }
 
 .scroll-top-button:hover {
-background-color: #0056b3;
+background-color: #333;
 }
 
 .next-button {
 bottom: 20px;
 right: 20px;
-background-color: #007bff;
+background-color: dimgray;
 color:#fff;
 padding: 10px 20px;
 border-radius:5px;
@@ -203,7 +203,7 @@ z-index:999;
 }
 
 .next-button:hover {
-background-color: #0056b3;
+background-color: #333;
 }
 
 footer {

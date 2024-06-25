@@ -42,10 +42,4 @@
 {% endblock %}
 
 
-{% block jsNext %}
-<script>
-    function scrollToTop() {
-     window.scrollTo({top:0, behavior: 'smooth'});
-   }
-</script>
-{% endblock %}
+{% set include_smooth_scrolling_js = True %}

@@ -29,8 +29,18 @@
         <footer>
             <p>&copy; 2024 LeraninHub</p>
         </footer>
-        {% block jsNext %}
-        {% endblock %}
+
         
+
+    <!-- Conditional JavaScript block for smooth scrolling from down to top   -->
+    {% if include_smooth_scrolling_js %}
+    <script>
+        // Common JavaScript code applicable to all pages if needed
+        function scrollToTop() {
+        window.scrollTo({top:0, behavior: 'smooth'});
+        }
+    </script>   
+    {% endif %}
+
     </body>
 </html>
