@@ -1,0 +1,55 @@
+{% extends "base.html" %}
+
+{% block title %}Python For Data Science{% endblock %}
+
+{% block header %}
+<h1>Python For Data Science</h1>
+{% endblock %}
+
+{% block content %}
+<section id="courses">
+    <div class="course">
+        <a href="{{ url_for('display_chapter', course_name='pythonForDataScience', chapter_name='whatIsNumpy') }}">
+        <img src="/static/images/pythonForDataScience/Numpy.png" width=220px height=160px alt="Numpy Courses">
+        <h4>Numpy</h4>
+        </a><br>
+        <div class="syllabus">
+            <h2>&emsp;Syllabus</h2>
+            <ul>
+                <li><a href="{{ url_for('display_chapter', course_name='pythonForDataScience', chapter_name='whatIsNumpy') }}">What is Numpy</a></li>
+                <li>One-d</li>
+            </ul>
+        </div>
+        
+    </div>
+
+    <div class="course">
+        <a href="{{ url_for('display_chapter', course_name='pythonForDataScience', chapter_name='whatIsPandas') }}">
+        <img src="/static/images/pythonForDataScience/Pandas.png" width=220px height=160px alt="Python For Data Science Courses">
+        <h4>Pandas</h4>
+        </a><br>
+        <div class="syllabus">
+            <h2>&emsp;Syllabus</h2>
+            <ul>
+                <li><a href="{{ url_for('display_chapter', course_name='pythonForDataScience', chapter_name='whatIsPandas') }}">What is Pandas</a></li>
+                <li>Next Chapter</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="course">
+        <a href="{{ url_for('display_chapter', course_name='pythonForDataScience', chapter_name='whatIsMatplotlib') }}">
+        <img src="/static/images/pythonForDataScience/Matplotlib.png" width=220px height=160px alt="Machine Learning Courses">
+        <h4>Matplotlib</h4>
+        </a><br>
+        <div class="syllabus">
+            <h2>&emsp;Syllabus</h2>
+            <ul>
+                <li><a href="{{ url_for('display_chapter', course_name='pythonForDataScience', chapter_name='whatIsMatplotlib') }}">What is Matplotlib</a></li>
+                <li>Next Chapter</li>
+            </ul>
+        </div>
+    </div>
+
+</section>
+{% endblock %}

@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+
+{% block title %}Numpy Introduction{% endblock %}
+
+{% block header %}
+<h1>What is Numpy</h1>
+{% endblock %}
+
+{% block content %}
+<section id = "course-details">
+    
+    {% set Numpy_sidebar_syllabus = true %} 
+    {% if Numpy_sidebar_syllabus %}
+        {% include 'base_content_sidebar_syllabus.html' %}
+    {% endif %}
+
+    <div class = "content" >
+        <h2>What is Numpy?</h2>
+        <p>NumPy stands for <b>Nu</b>meric <b>py</b>thon which is a python package for the computation and 
+           processing of the multidimensional and single dimensional array elements.</p>
+        <p>NumPy provides various powerful data structures, implementing multi-dimensional arrays and matrices. 
+           These data structures are used for the optimal computations regarding arrays and matrices.</p>
+        <p>With the revolution of data science, data analysis libraries like NumPy, SciPy, Pandas, etc. have seen 
+            a lot of growth. With a much easier syntax than other programming languages, python is the first choice 
+            language for the data scientist.</p>
+        <p>NumPy provides a convenient and efficient way to handle the vast amount of data. NumPy is also very convenient with Matrix multiplication 
+            and data reshaping. NumPy is fast which makes it reasonable to work with a large set of data.</p>
+
+            <button onclick="scrollToTop()" class="scroll-top-button">&#8593;</button> &emsp;
+            <a href="{{ url_for('display_chapter', course_name='pythonForDataScience', chapter_name='#NumpyNextChapter') }}" class="next-button" id="nextButton">Next &raquo;</a>
+    </div>
+</section>
+{% endblock %}
+
+{% set include_smooth_scrolling_js = True %}

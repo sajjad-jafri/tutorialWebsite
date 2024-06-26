@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+
+{% block title %}Matplotlib Introduction{% endblock %}
+
+{% block header %}
+<h1>What is Matplotlib</h1>
+{% endblock %}
+
+{% block content %}
+<section id = "course-details">
+    
+    {% set Matplotlib_sidebar_syllabus = true %} 
+    {% if Matplotlib_sidebar_syllabus %}
+        {% include 'base_content_sidebar_syllabus.html' %}
+    {% endif %}
+
+    <div class = "content" >
+        <h2>What is Matplotlib?</h2>
+        <p>Matplotlib is a comprehensive library for creating static, animated, and interactive visualizations 
+            in Python. Matplotlib makes easy things easy and hard things possible.</p>
+    </div>
+</section>
+{% endblock %}

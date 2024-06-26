@@ -37,4 +37,32 @@
         <li><a href="#oops">Object Oriented Programming</a></li>
     </ul>
 </div>
+
+{% elif Numpy_sidebar_syllabus %}
+<div class = "syllabi">
+    <ul>
+        <li><a href="{{ url_for('display_chapter', course_name='pythonForDataScience', chapter_name='whatIsNumpy') }}"
+            {% if active_chapter == 'whatIsNumpy' %} class="selected" {% endif %}>
+            What is Numpy</a></li> 
+    </ul>
+</div>
+
+{% elif Pandas_sidebar_syllabus %}
+<div class = "syllabi">
+    <ul>
+        <li><a href="{{ url_for('display_chapter', course_name='pythonForDataScience', chapter_name='whatIsPandas') }}"
+            {% if active_chapter == 'whatIsPandas' %} class="selected" {% endif %}>
+            What is Pandas</a></li> 
+    </ul>
+</div>
+
+{% elif Matplotlib_sidebar_syllabus %}
+<div class = "syllabi">
+    <ul>
+        <li><a href="{{ url_for('display_chapter', course_name='pythonForDataScience', chapter_name='whatIsMatplotlib') }}"
+            {% if active_chapter == 'whatIsMatplot' %} class="selected" {% endif %}>
+            What is Matplotlib</a></li> 
+    </ul>
+</div>
+
 {% endif %}

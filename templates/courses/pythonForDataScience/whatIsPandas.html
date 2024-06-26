@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+
+{% block title %}Numpy Introduction{% endblock %}
+
+{% block header %}
+<h1>What is Pandas</h1>
+{% endblock %}
+
+{% block content %}
+<section id = "course-details">
+    
+    {% set Pandas_sidebar_syllabus = true %} 
+    {% if Pandas_sidebar_syllabus %}
+        {% include 'base_content_sidebar_syllabus.html' %}
+    {% endif %}
+
+    <div class = "content" >
+        <h2>What is Pandas?</h2>
+        <p>pandas is a fast, powerful, flexible and easy to use open source data analysis and manipulation tool,
+            built on top of the Python programming language.</p>
+    </div>
+</section>
+{% endblock %}
