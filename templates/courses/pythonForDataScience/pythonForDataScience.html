@@ -10,14 +10,16 @@
 <section id="courses">
     <div class="course">
         <a href="{{ url_for('display_chapter', course_name='pythonForDataScience', chapter_name='whatIsNumpy') }}">
-        <img src="/static/images/pythonForDataScience/Numpy.png" width=220px height=160px alt="Numpy Courses">
+        <img src="/static/images/pythonForDataScience/Numpy.jpg" width=220px height=160px alt="Numpy Courses">
         <h4>Numpy</h4>
         </a><br>
         <div class="syllabus">
             <h2>&emsp;Syllabus</h2>
             <ul>
                 <li><a href="{{ url_for('display_chapter', course_name='pythonForDataScience', chapter_name='whatIsNumpy') }}">What is Numpy</a></li>
-                <li>One-d</li>
+                <li><a href="{{ url_for('display_chapter', course_name='pythonForDataScience', chapter_name='numpyArrays') }}">Numpy Arrays</a></li>
+                <li><a href="{{ url_for('display_chapter', course_name='pythonForDataScience', chapter_name='numpyIndexingSelecting') }}">Numpy Indexing and Selection</a></li>
+                <li><a href="{{ url_for('display_chapter', course_name='pythonForDataScience', chapter_name='numpyOperations') }}">Numpy Operations</a></li>
             </ul>
         </div>
         
@@ -25,7 +27,7 @@
 
     <div class="course">
         <a href="{{ url_for('display_chapter', course_name='pythonForDataScience', chapter_name='whatIsPandas') }}">
-        <img src="/static/images/pythonForDataScience/Pandas.png" width=220px height=160px alt="Python For Data Science Courses">
+        <img src="/static/images/pythonForDataScience/Pandas.jpg" width=220px height=160px alt="Python For Data Science Courses">
         <h4>Pandas</h4>
         </a><br>
         <div class="syllabus">
@@ -39,7 +41,7 @@
 
     <div class="course">
         <a href="{{ url_for('display_chapter', course_name='pythonForDataScience', chapter_name='whatIsMatplotlib') }}">
-        <img src="/static/images/pythonForDataScience/Matplotlib.png" width=220px height=160px alt="Machine Learning Courses">
+        <img src="/static/images/pythonForDataScience/Matplotlib.jpg" width=220px height=160px alt="Machine Learning Courses">
         <h4>Matplotlib</h4>
         </a><br>
         <div class="syllabus">

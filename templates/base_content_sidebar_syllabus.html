@@ -44,6 +44,15 @@
         <li><a href="{{ url_for('display_chapter', course_name='pythonForDataScience', chapter_name='whatIsNumpy') }}"
             {% if active_chapter == 'whatIsNumpy' %} class="selected" {% endif %}>
             What is Numpy</a></li> 
+        <li><a href="{{ url_for('display_chapter', course_name='pythonForDataScience', chapter_name='numpyArrays') }}"
+            {% if active_chapter == 'numpyArrays' %} class="selected" {% endif %}>
+            Numpy Arrays</a></li> 
+        <li><a href="{{ url_for('display_chapter', course_name='pythonForDataScience', chapter_name='numpyIndexingSelecting') }}"
+            {% if active_chapter == 'numpyIndexingSelecting' %} class="selected" {% endif %}>
+            Numpy Indexing and Selection</a></li>
+        <li><a href="{{ url_for('display_chapter', course_name='pythonForDataScience', chapter_name='numpyOperations') }}"
+            {% if active_chapter == 'numpyOperations' %} class="selected" {% endif %}>
+            Numpy Operations</a></li> 
     </ul>
 </div>
 
