@@ -29,7 +29,7 @@ defusedxml==0.7.1
 exceptiongroup==1.2.1
 executing==2.0.1
 fastjsonschema==2.20.0
-fastparquet>=2024.4.0,<2025.0.0
+fastparquet==2024.2.0
 Flask==3.0.3
 fqdn==1.5.1
 frozenlist==1.4.1
