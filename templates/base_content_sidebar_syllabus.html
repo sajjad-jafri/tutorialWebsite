@@ -13,21 +13,14 @@
             {% if active_chapter == 'dataTypes' %} class="selected" {% endif %}>
             Data Types in Python</a></li>
 
-        <li><a href="{{ url_for('display_chapter', course_name='python', chapter_name='ifStatements') }}"
-            {% if active_chapter == 'ifStatements' %} class="selected" {% endif %}>
-            Control-Flow - If Statement</a></li>
+        <li><a href="{{ url_for('display_chapter', course_name='python', chapter_name='pythonControlFlow') }}"
+            {% if active_chapter == 'pythonControlFlow' %} class="selected" {% endif %}>
+            Control Flow</a></li>
 
-        <li><a href="{{ url_for('display_chapter', course_name='python', chapter_name='forLoop') }}"
-            {% if active_chapter == 'forLoop' %} class="selected" {% endif %}>
-            For Loop</a></li>
+        <li><a href="{{ url_for('display_chapter', course_name='python', chapter_name='pythonFunctions') }}"
+            {% if active_chapter == 'pythonFunctions' %} class="selected" {% endif %}>
+            Functions</a></li>
 
-        <li><a href="{{ url_for('display_chapter', course_name='python', chapter_name='whileLoop') }}"
-            {% if active_chapter == 'whileLoop' %} class="selected" {% endif %}>
-            While Loop</a></li>
-
-        <li><a href="{{ url_for('display_chapter', course_name='python', chapter_name='transferStatements') }}"
-            {% if active_chapter == 'transferStatements' %} class="selected" {% endif %}>
-            Transfer Statement</a></li>
             
         <li><a href="#functions">Functions</a></li>
         <li><a href="#lists">Lists, Tuples, and Dictionaries</a></li>
