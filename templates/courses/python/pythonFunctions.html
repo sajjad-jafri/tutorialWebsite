@@ -3,7 +3,7 @@
 {% block title %}Functions{% endblock %}
 
 {% block header %}
-<h1>Functions in Python</h1>
+<h1>Functions</h1>
 {% endblock %}
 
 {% block content %}
@@ -15,13 +15,272 @@
     {% endif %}
 
     <div class = "content" >
-        <h2>Functions  in Python</h2>
-            <p>Lets read function</p>
+        <h2>Functions</h2>
+        <p>Function is a block of code that perform a specific task and can be reused in a program.</p>
+        <p>To define a function in Python, def keyword is used, followed by the function name and parentheses.</p>
+        <p>This block of code runs when it is called.</p>
+        <p>A function can return data as a result.</p>
+        <br>
+                    
+        <p><b>Syntax</b></p>
+        <pre>
+def function_name([parameters]):     <span style="color: #8b0000"># Parameters are optional</span>
+    ----staments----
+    ----------------
+        </pre><br>
+        <p><b>Python Code Example</b></p>
+        <pre>
+def greet(name):	<span style="color: #8b0000"># Function with argument</span>
+    print("Hello, " + name + "!")
+
+<span style="color: #8b0000"># Call the function with different arguments</span>
+greet("Alice")
+greet("Bob")
+greet("Charlie")	</pre><br>
+        <p><b>Output</b></p>
+        <pre>
+Hello, Alice!
+Hello, Bob!
+Hello, Charlie!
+        </pre>
+        
+        <br><br>
+        <p><b>How Python executes a function:</b></p>
+        <p><b>Statement - 1</b></p> 
+        <ul>
+            <li><p><i>def greet(name):</i> - It is a function header</p></li>
+        </ul><br>
+        <p><b>Statement - 2</b></p>
+        <ul>
+            <li><p><i>print("Hello, " + name + "!")</i> - It is body of a function or a definition.</p></li>
+            <li><p>The statements inside a function-body are not executed; this gets executed only when the function is called</p></li>
+        </ul><br>
+        <p><b>Statement - 3 to 5</b></p>
+        <ul>
+            <li><p><i>greet("Alice")</i> - Its a function call. When a function calls encounters, Python jumps to function definition and start executing it.</p></li>
+            <li><p>It will take "Alice" as parameter to function header and "Alice will be assigned to <i>name</i>.</p></li>
+            <li><p>Similary statements 4 and 5 will execute.</p></li>
+        </ul>
+
+        <br><br><br>	
+          <hr color="dustyrose">
+
+          <h2>Nested Functions</h2>
+          <p>A nested function is a function defined inside another function.</p><br>
+        <p><b>Python Code Example</b></p>
+        <pre>
+def greeting(first, last):
+    <span style="color: #8b0000"># nested helper function</span>
+    def getFullName():
+        return first + " " + last
+
+    print("Hi, " + getFullName() + "!")
+
+greeting('Quincy', 'Larson')
+        </pre>	
+          
+        <p><b>Output</b></p>
+        <pre>
+Hi, Quincy Larson!			   
+        </pre>
+        <br><br><br>
+          <hr color="dustyrose">
 
 
+        <p><b>Void Vs Non-Void function</b></p><br>
+        <p><b>Non-Void Function</b></p>
+        
+        <ul>
+          <li><p>Function that return some value.</p></li><br>
+             <li><p><b>Python Code Example</b></p></li>
+          <li><pre>
+def sum(x, y):
+    s = x + y	<span style="color: #8b0000"># returning the value of s</span>
+    return s
+
+result = sum(5, 10)
+print(result)
+          </pre></li><br>
+          <li><p><b>Output</b></p></li>
+          <li><p><pre>
+15
+          </pre></p></li><br>
+          <p><b>Note: </b> return statement ends a function execution, meaning after return statement, all the statements written after return statement will be ignored.</p>
+          <p>Lets understand it using below example</p>
+          <li><p><b>Python Code Example</b></p></li>
+          <li><pre>
+def check(a):
+    a = a + 5
+    return a
+    print(a)
+    return 12
+
+num = 10
+print("Incremet the num by 5: ",a)
+        </pre></li><br>
+          <li><p><b>Output</b></p></li>
+          <li><p><pre>
+Incremet the num by 5: 15
+          </pre></li>
+          <li><p>From the above output, we can see the statement <b>'print(a)'</b> and <b>'return 12'</b> are ignored.</p></li>
+        </ul>
+        <br><br><br>
+
+        <p><b>Void Function</b></p>			
+        <ul>
+          <li><p>Function that that perform some action but do not return any value.</p></li>
+          <li><p>A void function may or may not have a return statement</p></li><br>
+          <li><p><b>Python Code Example</b></p></li>
+          <li><pre>
+def greet():
+    print('Hello')
+
+def quote():
+    print('Goodness Count!')
+    return
+
+greet_fun_return_value = greet()
+print(greet_fun_return_value)
+
+quote_fun_return_value = quote()
+print(quote_fun_return_value) 
+          </pre></li><br>
+          <li><p><b>Output</b></p></li>
+          <li><p><pre>
+Hello
+None
+
+Goodness Count!
+None
+          </pre></li><br>
+        </ul>
+        <br><br><br>
+        <hr color="dustyrose">
+
+        <h2>Arguments and Parameters</h2>
+        <br>
+        <p><b>Arguments: </b>Values which are being passed. Appear in function call.</p>
+        <p><b>Parameters: </b>Values which are recieved. Appear in function header.</p>
+        <pre>
+def multiply(x, y):	<span style="color: #8b0000"># x and y are parameters</span>
+    return x*y
+
+a, b = 3, 4 
+m = multiply(a, b)	<span style="color: #8b0000"># a and b are arguments</span>
+print(m)
+
+        </pre>
+        <p>From above example: <i><b>x</b></i> and <i><b>y</b></i> are Parameters. <i><b>a</b></i> and <i><b>b</b></i> are arguments</p><br>
+        <p><b>Python support 3 types of parameters</b><p>
+        <ul>
+            <li><p>Positional parameters</p></li>
+            <li><p>Default parametrs</p></li>
+            <li><p>Keywords(or named) parameters</p></li>
+        </ul><br><br>
+        <p><b>Positional parameters</b></p>
+        <pre>
+def check(a, b, c):
+    ......
+    ......
+
+check(2, x, y)
+        </pre>
+        <p>2 &rarr; a,<br> 
+           x &rarr;  b,<br> 
+           y &rarr; c</p>																		<p>argument must be provided for all parameters.</p>
+        <br><br><br>
+        <hr color="gray">
+                                    
+        <p><b>Default parameters</b></p>
+        <p>Python allows us to assign default values to a function parameter.</p>
+        <p>This is useful when we already know the calue of certain parameters.</p><br>
+        <p><b>Python Code</b></p>	
+        <pre>
+def greet(name, message = "Good Morning!"):	<span style="color: #8b0000"># message is a default parameter</span>
+    print(f"Hello, {name}! {message}")
+
+greet("John")
+        </pre><br>
+        <p><b>Output</b></p>
+        <pre>
+Hello, John! Good Morning!
+        </pre><br>
+        <p>Here,</p>
+        <p><b>message</b> is <b>Default Parameter</b></p>
+        <p><b>"Good Morning"</b> is <b>Default argument</b></p> 
+        <p><b>name</b> is required parameter</p>
+        <br>
+        <p>From the above code, we did not pass the value for message. This means that if the argument is not provided when the function is called, it will use the default value.</p><br>
+        <p>What if we pass the value for default parameter?</p>
+        <p><b>Python Code</b></p>	
+        <pre>
+def greet(name, message = "Good Morning!"):	
+    print(f"Hello, {name}! {message}")
+
+greet("John", "How are you")
+        </pre><br>
+        <p><b>Output</b></p>
+        <pre>
+Hello, John! How are you
+        </pre><br>
+        <p>In a function header, any parameter cannot have a default value unless all parameters appearing on its right have their default values.</p>
+        <ul style="list-style-type: square">
+            <li><p>def interset(prin, time, r=0.10): &rarr; Valid</p></li>
+            <li><p>def interset(prin, time=2, r): &rarr; Invalid</p></li>
+            <li><p>def interset(prin=5400, time=2, r): &rarr; Invalid</p></li>
+            <li><p>def interset(prin, time=2, r=0.10): &rarr; Valid</p></li>
+            <li><p>def interset(prin=2000, time=2, r=0.10): &rarr; Valid</p></li>
+        </ul>
+        <br><br><br>
+
+        <hr color="gray">
+        <p><b>Keywords parameters</b></p>
+        <p>So far, we have seen that we cannot change the order of the arguments in the function call; we have to remember the correct order of the arguments.</p>
+        <p>Python offers a way of writing function calls where we can write any argument in any order.</p><br>
+        <p><b>Python Code></b></p>
+        <pre>
+def interest(p, r, t):
+    ........
+
+SI = interest(500, t=2, r = 0.10)
+        </pre><br>
+        <br><br><br>
+
+        <hr color="dustyrose">
+        <h2>Lambda Function</h2>
+        <p>A lambda function, also known as an anonymous function(defined without a name), is a compact, self-contained block of code that can take any number of arguments and evaluate a single expression.</p><br>
+        <p><b>Syntax</b></p>
+        <p><mark>lambda arguments: expression</mark></p><br>
+        <p><mark>lambda x, y: x + y</mark> is similar to<br><br>
+        <mark>def(x, y)</mark><br>
+        &emsp;&emsp;<mark>return x + y</mark></p><br>
+        
+        <p><b>Python Code</b></p>
+        <pre>
+add = lambda x, y: x + y
+print(add(7,3))
+        </pre><br>
+        <p><b>Output</b></p>
+        <pre>
+10
+        </pre><br><br>
+        <p>Lets take a look at one more program lambda with map</p>
+        <p><b>Python Code</b></p>
+        <pre>
+numbers = [1,2,3,4]
+squared_num = list(map(lambda x: x**2, numbers))
+print(squared_num)
+        </pre><br>
+        <p><b>Output</b></p> 
+        <pre>
+[1,4,9,16]
+        </pre>
+                                            
+       
+        <br><br><br><br>
 
         <button onclick="scrollToTop()" class="scroll-top-button">&#8593;</button> &emsp;
-        <a href="{{ url_for('display_chapter', course_name='python', chapter_name='pythonControlFlow') }}" class="next-button" id="nextButton">Next &raquo;</a>
+        <a href="{{ url_for('display_chapter', course_name='python', chapter_name='dataStructure') }}" class="next-button" id="nextButton">Next &raquo;</a>
 
     </div>
 </section>

@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+
+{% block title %}Functions{% endblock %}
+
+{% block header %}
+<h1>Built-in Data Structure</h1>
+{% endblock %}
+
+{% block content %}
+<section id = "course-details"> 
+    
+    {% set python_sidebar_syllabus = true %}  {# Set the local variable directly in child.html #}
+    {% if python_sidebar_syllabus %}
+        {% include 'base_content_sidebar_syllabus.html' %}
+    {% endif %}
+
+    <div class = "content" >
+        <h2>Data Structure</h2>
+
+
+
+        <button onclick="scrollToTop()" class="scroll-top-button">&#8593;</button> &emsp;
+        <a href="{{ url_for('display_chapter', course_name='python', chapter_name='dataStructure') }}" class="next-button" id="nextButton">Next &raquo;</a>
+
+    </div>
+</section>
+{% endblock %}
+
+{% set include_smooth_scrolling_js = True %}
