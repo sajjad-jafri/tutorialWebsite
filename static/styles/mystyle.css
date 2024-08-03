@@ -79,7 +79,7 @@ nav ul li a:hover {
   flex-wrap: wrap;
   justify-content: space-around;
   background-color: #f0f0f0;
-   color: #333;
+  color: #333;
 }
 
 
@@ -97,7 +97,7 @@ nav ul li a:hover {
 
 
 .syllabus li {
-  background color: #f0f0f0;
+  background-color: #f0f0f0;
   border-radius: 5px;
   padding: 10px 20px;
   margin-bottom: 10px;
@@ -119,14 +119,14 @@ nav ul li a:hover {
 	justify-content: space-between;
 	padding: 50px 0;
 	background-color: #f0f0f0;
-   	color: #333;
+   color: #333;
 }
 
 .syllabi {
 	width: 30%;
 	position: sticky;
-    	top: 0;
-    	height: fit-content;
+   top: 0;
+   height: fit-content;
 }
 
 .syllabi ul {
@@ -135,7 +135,7 @@ nav ul li a:hover {
 }
 
 .syllabi li {
-   background color: #f0f0f0;
+   background-color: #f0f0f0;
    border-radius: 5px;
    padding: 10px 20px;
    margin-bottom: 10px;
@@ -153,7 +153,6 @@ nav ul li a:hover {
 }
 
 .syllabi .selected {
-	background-color: #f0f0f0;
 	font-weight: bold;
 }
 
@@ -176,10 +175,10 @@ pre {
    padding: 8px;
    border-radius: 8px;
    font-family: monospace;
-   color: #1a37e;
+   color: #11031a;
    white-space: pre-wrap;
    max-width: calc(80%); /* Adjust based on your padding */
-border-left: 5px solid #666;
+   border-left: 5px solid #666;
 }
 
 
