@@ -26,10 +26,26 @@
                 {% if active_chapter == 'dataStructure' %} class="selected" {% endif %}>
                 Built-in Data Structure</a></li>
         
-        <li><a href="#file-handling">File Handling</a></li>
-        <li><a href="#error-handling">Error Handling</a></li>
-        <li><a href="#modules">Modules and Packages</a></li>
-        <li><a href="#oops">Object Oriented Programming</a></li>
+        <li><a href="{{ url_for('display_chapter', course_name='python', chapter_name='list') }}"
+                {% if active_chapter == 'list' %} class="selected" {% endif %}>
+                Lists</a></li>
+
+        <li><a href="{{ url_for('display_chapter', course_name='python', chapter_name='tuples') }}"
+                {% if active_chapter == 'tuples' %} class="selected" {% endif %}>
+                Tuples</a></li>
+
+        <li><a href="{{ url_for('display_chapter', course_name='python', chapter_name='sets') }}"
+                {% if active_chapter == 'sets' %} class="selected" {% endif %}>
+                Sets</a></li>
+
+        <li><a href="{{ url_for('display_chapter', course_name='python', chapter_name='dictionary') }}"
+                    {% if active_chapter == 'dictionary' %} class="selected" {% endif %}>
+                    Dictionary</a></li>
+    
+        
+        <li><a href="{{ url_for('display_chapter', course_name='python', chapter_name='fileHandling') }}"
+                    {% if active_chapter == 'fileHandling' %} class="selected" {% endif %}>
+                    File Handling</a></li>
     </ul>
 </div>
 
