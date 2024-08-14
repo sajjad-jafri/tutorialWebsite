@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+
+{% block title %}Pyspark Course{% endblock %}
+
+{% block header %}
+<h1>PySpark</h1>
+{% endblock %}
+
+{% block content %}
+<div class="hero-text">
+    <h2>Course Overview</h2>
+    
+    <div class="syllabus">        
+        <h2>PySpark Tutorial Syllabus</h2>
+        <ul>
+            <li><a href="{{ url_for('display_chapter', course_name='pyspark', chapter_name='bigDataAndDataLake') }}">Understanding Big Data and Data Lake</a></li>
+        </ul>    
+    </div>
+</div>
+
+{% endblock %}

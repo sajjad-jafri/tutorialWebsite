@@ -7,40 +7,39 @@
 
         <li><a href="{{ url_for('display_chapter', course_name='python', chapter_name='inpOut') }}"
             {% if active_chapter == 'inpOut' %} class="selected" {% endif %}>
-                    Input/Output in Python</a></li>
+                    Input and Output Statements</a></li>
 
         <li><a href="{{ url_for('display_chapter', course_name='python', chapter_name='dataTypes') }}"
             {% if active_chapter == 'dataTypes' %} class="selected" {% endif %}>
-            Data Types in Python</a></li>
+            Python Data Types</a></li>
 
         <li><a href="{{ url_for('display_chapter', course_name='python', chapter_name='pythonControlFlow') }}"
             {% if active_chapter == 'pythonControlFlow' %} class="selected" {% endif %}>
-            Control Flow</a></li>
+            Python Control Flow</a></li>
+
+        <li><a href="{{ url_for('display_chapter', course_name='python', chapter_name='pythonStrings') }}"
+            {% if active_chapter == 'pythonStrings' %} class="selected" {% endif %}>
+            Python Strings</a></li>
 
         <li><a href="{{ url_for('display_chapter', course_name='python', chapter_name='pythonFunctions') }}"
             {% if active_chapter == 'pythonFunctions' %} class="selected" {% endif %}>
-            Functions</a></li>
-
-            
-        <li><a href="{{ url_for('display_chapter', course_name='python', chapter_name='dataStructure') }}"
-                {% if active_chapter == 'dataStructure' %} class="selected" {% endif %}>
-                Built-in Data Structure</a></li>
+            Python Functions</a></li>
         
         <li><a href="{{ url_for('display_chapter', course_name='python', chapter_name='list') }}"
                 {% if active_chapter == 'list' %} class="selected" {% endif %}>
-                Lists</a></li>
+                Data Structure: Lists</a></li>
 
         <li><a href="{{ url_for('display_chapter', course_name='python', chapter_name='tuples') }}"
                 {% if active_chapter == 'tuples' %} class="selected" {% endif %}>
-                Tuples</a></li>
+                Data Structure: Tuples</a></li>
 
         <li><a href="{{ url_for('display_chapter', course_name='python', chapter_name='sets') }}"
                 {% if active_chapter == 'sets' %} class="selected" {% endif %}>
-                Sets</a></li>
+                Data Structure: Sets</a></li>
 
         <li><a href="{{ url_for('display_chapter', course_name='python', chapter_name='dictionary') }}"
                     {% if active_chapter == 'dictionary' %} class="selected" {% endif %}>
-                    Dictionary</a></li>
+                    Data Structure: Dictionary</a></li>
     
         
         <li><a href="{{ url_for('display_chapter', course_name='python', chapter_name='fileHandling') }}"
@@ -82,6 +81,19 @@
         <li><a href="{{ url_for('display_chapter', course_name='pythonForDataScience', chapter_name='whatIsMatplotlib') }}"
             {% if active_chapter == 'whatIsMatplot' %} class="selected" {% endif %}>
             What is Matplotlib</a></li> 
+    </ul>
+</div>
+
+{% elif pyspark_sidebar_syllabus %}
+<div class = "syllabi">
+    <ul>
+        <li><a href="{{ url_for('display_chapter', course_name='pyspark', chapter_name='bigDataAndDataLake') }}"
+            {% if active_chapter == 'bigDataAndDataLake' %} class="selected" {% endif %}>
+            Understanding Big Data and Data Lake</a></li>
+             
+        <li><a href="{{ url_for('display_chapter', course_name='pyspark', chapter_name='installinApache') }}"
+            {% if active_chapter == 'numpyArrays' %} class="selected" {% endif %}>
+            Installing and Using Apache Spark</a></li> 
     </ul>
 </div>
 
